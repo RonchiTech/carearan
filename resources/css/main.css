@@ -57,6 +57,7 @@ html,body{
 }
 .navbar .navbar__items{
     width: 100%;
+    min-width: 400px;
     display: flex;
     justify-content: flex-end;
     
@@ -182,23 +183,24 @@ html,body{
 }
 .subscription{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    
+   flex-wrap: wrap;
 }
 .section__subscription h2{
     display: inline-block;
+    width: 80%;
     margin: 25px 0 35px 75px;
     border-bottom: 2px solid #c2a91c;
     padding-bottom: 15px;
+    text-align: center;
 }
 .subscription_cards{
     height: 100%;
     width: 300px;
     /* border: 10px solid black; */
     border-radius: 5%;
-    margin: 0 10px;
-   
+    margin: 5px 10px;
    
 }
 .subscript_card__image{
@@ -236,7 +238,7 @@ html,body{
 }
 .subscription_card__info_perks{
     /* list-style: none; */
-    margin-left: 25px;
+    padding: 0 25px;
 
 }
 .subscription_card__info_perks li{
@@ -245,7 +247,9 @@ html,body{
     margin-bottom: 8px;
     color: rgb(105, 102, 102);
 }
-.subscription_card__info a{
+
+.subscription_card__info a:link,
+.subscription_card__info a:visited{
     display: block;
     width: 50%;
     text-decoration: none;
@@ -255,5 +259,12 @@ html,body{
     border-radius: 5%;
     padding:5px 10px;
     color: #000;
+    transition: background-color 0.5s;
 }
+
+.subscription_card__info a:hover,
+.subscription_card__info a:active{ 
+    background-color: #F2D0A4;
+}
+
 
