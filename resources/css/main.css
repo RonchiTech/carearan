@@ -66,9 +66,11 @@ html,body{
 .nav__logo_name{
     font-size: 2.5rem;
     font-weight: bold;
-    color: #F2D0A4;
     border: 2px solid #F2D0A4;
     padding: 10px 25px;
+}
+.nav__logo_name a{
+    color: #F2D0A4;
 }
 
 
@@ -180,20 +182,21 @@ html,body{
 
 .section__subscription{
     width: 100%;
-    height: 100%;
+   
 }
 .subscription{
     display: flex;
     align-items: flex-end;
     justify-content: center;
-   flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
 }
 .section__subscription h2{
     display: block;
     width: 80%;
-    margin: 55px auto;
+    margin: 0 auto 55px auto;
     border-bottom: 2px solid #c2a91c;
-    padding-bottom: 15px;
+    padding: 35px 0;
     text-align: center;
 }
 .subscription_cards{
@@ -268,4 +271,71 @@ html,body{
     background-color: #F2D0A4;
 }
 
+.section__contacts{
+    background-color: #f1be7a;
+    width: 100%;
+    
+}
+.section__contacts img{
+    height: 50px;
+    width: auto;
+}
+.section__contacts h2{
+    width: 80%;
+    margin: 0 auto 55px auto;
+    padding: 35px 0;
+    text-align: center;
+    border-bottom: 2px solid #000;
+}
 
+.section__contact_info {
+    width: 60%;
+    margin: 65px auto;
+    position: relative;
+    
+}
+.section__contact_info h3{
+    display: inline-block;
+    position: absolute;
+    top: 9px;
+    left: 90px;
+   
+}
+.section__contact_infos:last-child{
+    padding-bottom: 5px;
+}
+footer{
+    height: 40%;
+    background-color: #000;
+    position: relative;
+}
+
+.footer__navbar{
+    width: 60%;
+    margin: 0 auto;
+    list-style: none;
+    padding-top: 45px;
+    
+}
+.footer__navbar li{
+    margin-bottom: 15px;
+    text-align: center;
+    
+}
+.footer__navbar li a{
+    color: #fff;
+    text-decoration: none;
+    
+}
+.footer_border{
+    margin: 25px 0;
+    border-bottom: 1px solid rgb(180, 176, 176);
+}
+.copyright{
+    padding: 25px 35px 0 35px;
+    display: inline-block;
+    color: blanchedalmond;
+    font-size: .9rem;
+    position: absolute;
+    right: 25px;
+}
