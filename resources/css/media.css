@@ -1,0 +1,199 @@
+@media only screen and (min-width: 64rem) {
+/***********/
+/***Main***/
+/*********/
+.section_main{
+    background: linear-gradient(to right,rgba(0,0,0,0.0),rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.9))
+    , url('/resources/imgs/1.jpg');
+    height: 95vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    position: relative;  
+    padding: 35px 10%;
+    
+}
+/***************/
+/****Navbar****/
+/*************/
+
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    
+    padding-top: 40px;
+
+    
+}
+.navbar a{
+    text-decoration: none;
+    color: #F2D0A4;
+}
+.logo{
+    list-style: none;
+    font-size: 2.5rem;
+    align-self: center;
+}
+.items{
+    display: flex;
+    list-style: none;
+    align-self: center;
+}
+
+.items li{
+    margin-left: 30px;
+    
+}
+
+.items li a{
+    margin-left: 30px;
+}
+
+
+/***************/
+/***Carearan***/
+/*************/
+.carearan{
+  padding: 0 0;
+  height: 100%;
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  right: 5%;
+  top: 41%;
+}
+.carearan__tagline h1{
+    word-spacing: 2.5px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 65px;
+    color: #fff;
+}
+.carearan__tagline p{
+    color: #F2D0A4;
+}
+.carearan a{
+    border: 3px solid #F2D0A4;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 45%;
+    margin: 25px auto;
+    
+}
+
+.carearan__about_us:link,
+.carearan__about_us:visited{
+    border-color: #F2D0A4;
+    background: #F2D0A4;
+    color: #ffffff;
+    transition: background-color 0.45s;
+ 
+}
+.carearan__our_cars:link,
+.carearan__our_cars:visited{
+    color: #F2D0A4;
+    transition: background-color 0.45s;
+}
+.carearan__our_cars:hover,
+.carearan__our_cars:active{
+    color: #fff;
+  
+}
+
+.carearan__about_us:hover,
+.carearan__about_us:active,
+.carearan__our_cars:hover,
+.carearan__our_cars:active{
+    border-color: #f1be7a;
+    background: #f1be7a;
+}
+
+
+  /************/
+  /***About***/
+  /**********/
+  .section__about_us {
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+  }
+
+  .about_us__title {
+    width: 45%;
+    background-color: #f1be7a;
+    height: auto;
+  }
+  .about_us__title h2 {
+    padding: 30% 25%;
+    text-align: center;
+  }
+
+  .about_us__description {
+    width: 55%;
+    height: auto;
+  }
+  .about_us__description p {
+    margin: 15% 15%;
+    padding: 15px 25px;
+    text-align: center;
+    background-color: #fff;
+  }
+
+  .section__showoff {
+      display: block;
+    background: url("/resources/imgs/3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 60%;
+    position: relative;
+  }
+
+  .section__showoff h2 {
+    position: absolute;
+    bottom: 50%;
+  }
+
+  .section__subscription {
+    width: 100%;
+  }
+  .subscription {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+  }
+
+  .subscription_cards{
+    height: 100%;
+    margin: 0 10px;
+}
+
+  footer {
+    height: 40%;
+    position: relative;
+  }
+
+  .footer__navbar {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 45px;
+  }
+ 
+ 
+  .footer_border {
+    margin: 25px 0;
+  }
+  .copyright {
+    padding: 15px 35px 0 35px;
+    display: inline-block;
+    font-size: 0.9rem;
+    position: absolute;
+    right: 25px;
+  }
+}

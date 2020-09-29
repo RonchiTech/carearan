@@ -1,341 +1,278 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
 /***************/
 /***Defaults***/
 /*************/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html,body{
-    height: 100%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
-    color: #000;
-    scroll-behavior: smooth;
+html,
+body {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: #000;
+  scroll-behavior: smooth;
 }
-
-
 
 /***********/
 /***Main***/
 /*********/
-.section_main{
-    background: linear-gradient(to right,rgba(0,0,0,0.0),rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.9))
-    , url('/resources/imgs/1.jpg');
-    height: 95vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; 
-    position: relative;  
-    padding: 35px 10%;
-    
+.section_main {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("/resources/imgs/1media.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  position: relative; 
 }
-/***************/
-/****Navbar****/
-/*************/
-.navbar{
-    display: flex;
-    align-items: flex-end;
-  
-}
-.navbar div{
-    margin-right: 40px;
-}
-.navbar div a:link,
-.navbar div a:visited{
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.25s;
-}
-.navbar div a:hover,
-.navbar div a:active{
-    color: #F2D0A4;
-}
-.navbar .navbar__logo{
- justify-content: flex-start;
-}
-.navbar .navbar__items{
-    width: 100%;
-    min-width: 400px;
-    display: flex;
-    justify-content: flex-end;
-    
-}
-.nav__logo_name{
-    font-size: 2.5rem;
-    font-weight: bold;
-    border: 2px solid #F2D0A4;
-    padding: 10px 25px;
-}
-.nav__logo_name a{
-    color: #F2D0A4;
+.navbar {
+  display: none;
 }
 
-
+.carearan {
+  height: 100%;
+  width: 100%;
+  color: #f2d0a4;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 325px 35px 50px 35px;
+}
 /***************/
 /***Carearan***/
 /*************/
-.carearan{
-    position: absolute;
-    top: 37%;
-    right: 10%;
+.carearan__tagline {
+  margin-bottom: 43px;
 }
-.carearan__tagline{
-    margin-bottom: 43px;
+.carearan__tagline h1 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.5rem;
 }
-.carearan__tagline h1{
-    word-spacing: 2.5px;
-    letter-spacing: 2px;
-    font-weight: 600;
-    text-transform: uppercase;
-    line-height: 50px;
-    color: #fff;
+.carearan__tagline p {
+  font-size: 1rem;
 }
-.carearan__tagline p{
-    color: #F2D0A4;
+.carearan a {
+    display: block;
+    margin-bottom: 10px;
+  border: 1px solid #f2d0a4;
+  border-radius: 5px;
+  padding: 15px 35px;
+  text-decoration: none;
+  font-size: 1rem;
 }
-.carearan a{
-    border: 3px solid #F2D0A4;
-    border-radius: 5px;
-    padding: 15px 35px;
-    text-decoration: none;
-    
-    
-}
-.carearan a:first-of-type{
-    margin-right: 5px;
-}
+/* .carearan a:first-of-type {
+  margin-right: 5px;
+} */
 .carearan__about_us:link,
-.carearan__about_us:visited{
-    border-color: #F2D0A4;
-    background: #F2D0A4;
-    color: #ffffff;
-    transition: background-color 0.45s;
- 
+.carearan__about_us:visited {
+  border-color: #f2d0a4;
+  background: #f2d0a4;
+  color: #ffffff;
+  transition: background-color 0.45s;
 }
 .carearan__our_cars:link,
-.carearan__our_cars:visited{
-    color: #F2D0A4;
-    transition: background-color 0.45s;
+.carearan__our_cars:visited {
+  color: #f2d0a4;
+  transition: background-color 0.45s;
 }
 .carearan__our_cars:hover,
-.carearan__our_cars:active{
-    color: #fff;
-  
+.carearan__our_cars:active {
+  color: #fff;
 }
 
 .carearan__about_us:hover,
 .carearan__about_us:active,
 .carearan__our_cars:hover,
-.carearan__our_cars:active{
-    border-color: #f1be7a;
-    background: #f1be7a;
+.carearan__our_cars:active {
+  border-color: #f1be7a;
+  background: #f1be7a;
 }
 
-/************/
-/***About***/
-/**********/
-.section__about_us{
-
-    width: 100%;
-    display: flex;
-}
-
-.about_us__title{  
-    width: 45%;
-    background-color: #f1be7a;
-    height: auto;
+   /************/
+    /***About***/
+    /**********/
+    .section__about_us{
+        width: 100%;
+        display: block;
+        background-color: #f1be7a;
+    }
     
-}
-.about_us__title h2{
-    padding: 30% 25%;
-    text-align: center;
-}
-
-.about_us__description{
-    width: 55%;
-    height: auto;
-}
-.about_us__description p{
-    margin: 15% 15%;
-    padding: 15px 25px;
-    text-align: center;
-}
+    .about_us__title h2{
+        padding-top: 5%;
+        text-align: center;
+    }
+    .about_us__description p{
+        padding-bottom: 15% ;
+        text-align: center;
+    }
+    .section__showoff{
+        display: none;
+    }
 
 
-.section__showoff{
-    background: url('/resources/imgs/3.jpg');
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    height: 60%;
-    position: relative;
-}
 
-.section__showoff h2{
-    position: absolute;
-    bottom: 50%;
-}
+    .section__subscription{
+        width: 100%;
+       
+    }
 
-.section__subscription{
-    width: 100%;
-   
-}
-.subscription{
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 45px;
-}
-.section__subscription h2{
-    display: block;
-    width: 80%;
-    margin: 0 auto 55px auto;
-    border-bottom: 2px solid #c2a91c;
-    padding: 35px 0;
-    text-align: center;
-}
-.subscription_cards{
-    height: 100%;
-    width: 300px;
-    /* border: 10px solid black; */
-    border-radius: 5%;
-    margin: 5px 10px;
-   
-}
-.subscript_card__image{
-    height: 40%;
-    /* background: #d67443; */
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
-    background: #F2D0A4;
-    padding-top: 25px;
-    width: 100%;
+    .subscription{
+        display: block;
+        margin-bottom: 45px;
+    }
+    .section__subscription h2{
+        display: block;
+        width: 80%;
+        margin: 0 auto 55px auto;
+        border-bottom: 2px solid #c2a91c;
+        padding: 35px 0;
+        text-align: center;
+    }
+    .subscription_cards{
+        height: 100%;
+        width: 300px;
+        /* border: 10px solid black; */
+        border-radius: 5%;
+        margin: 10px auto;
+       
+    }
+    .subscript_card__image{
+        height: 40%;
+        /* background: #d67443; */
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+        background: #F2D0A4;
+        padding-top: 25px;
+        width: 100%;
+        
+    }
+    .subscript_card__image img{
+        height: 100px;
+        display: block;
+        margin: 0 auto ;
+        width: auto;
     
-}
-.subscript_card__image img{
-    height: 100px;
-    display: block;
-    margin: 0 auto ;
-    width: auto;
-
-}
-.subscript_card__image h3{
-    text-align: center;
-}
-
-.subscription_card__info{
-    padding: 10px 0;
-    border-left: 2px solid #F2D0A4;
-    border-right: 2px solid #F2D0A4;
-    border-bottom: 2px solid #F2D0A4;
-    border-bottom-right-radius: 5%;
-    border-bottom-left-radius: 5%;
-}
-.subscription_card__info h4{
-    text-align: center;
-    margin-bottom: 25px;
-}
-.subscription_card__info_perks{
-    /* list-style: none; */
-    padding: 0 25px;
-
-}
-.subscription_card__info_perks li{
-    font-size: 0.95rem;
-    /* text-align: center; */
-    margin-bottom: 8px;
-    color: rgb(105, 102, 102);
-}
-
-.subscription_card__info a:link,
-.subscription_card__info a:visited{
-    display: block;
-    width: 50%;
-    text-decoration: none;
-    margin: 35px auto 25px auto;
-    text-align: center;
-    border: 3px solid #F2D0A4;
-    border-radius: 5%;
-    padding:5px 10px;
-    color: #000;
-    transition: background-color 0.5s;
-}
-
-.subscription_card__info a:hover,
-.subscription_card__info a:active{ 
-    background-color: #F2D0A4;
-}
-
-.section__contacts{
-    background-color: #f1be7a;
-    width: 100%;
+    }
+    .subscript_card__image h3{
+        text-align: center;
+    }
     
-}
-.section__contacts img{
-    height: 50px;
-    width: auto;
-}
-.section__contacts h2{
-    width: 80%;
-    margin: 0 auto 55px auto;
-    padding: 35px 0;
-    text-align: center;
-    border-bottom: 2px solid #000;
-}
+    .subscription_card__info{
+        padding: 10px 0;
+        border-left: 2px solid #F2D0A4;
+        border-right: 2px solid #F2D0A4;
+        border-bottom: 2px solid #F2D0A4;
+        border-bottom-right-radius: 5%;
+        border-bottom-left-radius: 5%;
+    }
+    .subscription_card__info h4{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .subscription_card__info_perks{
+        /* list-style: none; */
+        padding: 0 25px;
+    
+    }
+    .subscription_card__info_perks li{
+        font-size: 0.95rem;
+        /* text-align: center; */
+        margin-bottom: 8px;
+        color: rgb(105, 102, 102);
+    }
+    
+    .subscription_card__info a:link,
+    .subscription_card__info a:visited{
+        display: block;
+        width: 50%;
+        text-decoration: none;
+        margin: 35px auto 25px auto;
+        text-align: center;
+        border: 3px solid #F2D0A4;
+        border-radius: 5%;
+        padding:5px 10px;
+        color: #000;
+        transition: background-color 0.5s;
+    }
+    
+    .subscription_card__info a:hover,
+    .subscription_card__info a:active{ 
+        background-color: #F2D0A4;
+    }
 
-.section__contact_info {
-    width: 60%;
-    margin: 65px auto;
-    position: relative;
-    
-}
-.section__contact_info h3{
-    display: inline-block;
-    position: absolute;
-    top: 9px;
-    left: 90px;
-   
-}
-.section__contact_infos:last-child{
-    padding-bottom: 5px;
-}
-footer{
-    height: 40%;
-    background-color: #000;
-    position: relative;
-}
 
-.footer__navbar{
-    width: 60%;
-    margin: 0 auto;
-    list-style: none;
-    padding-top: 45px;
+
+    .section__contacts{
+        background-color: #f1be7a;
+        width: 100%;
+        
+    }
+    .section__contacts img{
+        height: 30px;
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+    .section__contacts h2{
+        width: 80%;
+        margin: 0 auto 55px auto;
+        padding: 15px 0;
+        text-align: center;
+        border-bottom: 2px solid #000;
+    }
     
-}
-.footer__navbar li{
-    margin-bottom: 15px;
-    text-align: center;
+    .section__contact_info {
+        width: 60%;
+        margin: 65px auto;
+        
+    }
+    .section__contact_info h3{
+        font-size: 0.8rem;
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+
+    }
+    .section__contact_infos:last-child{
+        padding-bottom: 5px;
+    }
+
+    footer{
+        background-color: #000;
+    }
     
-}
-.footer__navbar li a{
-    color: #fff;
-    text-decoration: none;
-    
-}
-.footer_border{
-    margin: 25px 0;
-    border-bottom: 1px solid rgb(180, 176, 176);
-}
-.copyright{
-    padding: 25px 35px 0 35px;
-    display: inline-block;
-    color: blanchedalmond;
-    font-size: .9rem;
-    position: absolute;
-    right: 25px;
-}
+    .footer__navbar{
+        padding-top: 25px;
+        list-style: none;
+        
+    }
+    .footer__navbar li{
+        text-align: center;
+        margin-bottom: 15px;
+        
+    }
+    .footer__navbar li a{
+        color: #fff;
+        text-decoration: none;
+        
+    }
+    .footer_border{
+        border-bottom: 1px solid rgb(180, 176, 176);
+    }
+    .copyright{
+        text-align: center;
+        display: block;
+        color: blanchedalmond;
+        font-size: .5rem;
+        padding: 2%;
+       
+    }
